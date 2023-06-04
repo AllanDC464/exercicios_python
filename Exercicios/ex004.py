@@ -1,8 +1,16 @@
 a = input('Digite algo: ')
 print(type(a))
 
-print(('{} | é numero? {}'.format(a, a.isnumeric())))
+print('')
 
-print(('{} | é palavra? {}'.format(a, a.isalpha())))
+print(('{} | é número? {}'.format(a, a.isnumeric())))
 
-print(('{} | é letra ou numero? {}').format(a, a.isalnum()))
+print(('{} | é alfabético? {}'.format(a, a.isalpha())))
+
+print(('{} | é alfanumérico? {}'.format(a, a.isalnum())))
+
+print(('{} | está em maiúsculas? {}'.format(a, a.isupper())))
+
+print(('{} | está em minusculas? {}'.format(a, a.islower())))
+
+print(('{} | está capitalizada? {}'.format(a, a.istitle())))
