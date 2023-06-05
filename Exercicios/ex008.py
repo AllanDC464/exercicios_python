@@ -1,0 +1,5 @@
+m = float(input('Digite a medida em metros que deseja converter: '))
+print('{}M = {}KM'.format(m, m/1000))
+print('{}M = {}cm'.format(m, m*100))
+print('{}M = {}mm'.format(m, m*1000))
+print('{}M = {}µm'.format(m, m*1000000))
