@@ -1,4 +1,4 @@
-frase = input('Digite uma frase: ')
-print(frase.upper().count('A'))
-print(frase.upper().find('A'))
-print(frase.upper().rfind('A'))
+frase = input('Digite uma frase: ').upper().strip()
+print(frase.count('A'))
+print(1 + frase.find('A'))
+print(1 + frase.rfind('A'))
