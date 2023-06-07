@@ -1,3 +1,2 @@
-nc = input('Digite o nome da cidade: ').upper()
-div = nc.split()
-print('SANTO' in div[0])
+nc = input('Digite o nome da cidade: ').upper().split()
+print('SANTO' in nc[0])
