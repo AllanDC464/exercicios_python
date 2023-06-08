@@ -1,0 +1,5 @@
+n1 = int(input('\033[32m1º número: '))
+n2 = int(input('2º número: '))
+n3 = int(input('3º número: '))
+l = sorted([n1, n2, n3])
+print('\033[1;36mMaior valor digitado: {} \nMenor valor digitado: {}\033[m'.format(l[2], l[0]))
