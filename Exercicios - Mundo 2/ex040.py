@@ -6,4 +6,4 @@ if m < 5.0:
 elif m >= 5.0 and m < 7.0:
     print('Sua média foi de {:.1f} você esta de \033[33mRECUPERAÇÃO\033[m!'.format(m))
 else:
-    print('Sua média foi de {:.1f} você esta \033[34mAPROVADO\033[m!'.format(m))
+    print('Sua média foi de {:.1f} você esta \033[32mAPROVADO\033[m!'.format(m))
