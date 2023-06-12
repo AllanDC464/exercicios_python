@@ -7,8 +7,6 @@ for c in range(1, 8):
     idade = anoAtu - anoNas
     if idade >= 21:
         smai += 1
-    elif idade > 0:
-        smei += 1
     else:
-        print('Idade Invalida!')
-print('{} são maiores de idade! \n{} são menores de idade!'.format(smai, smei))
+        smei += 1
+print('\033[32m{} são maiores de idade!\033[m \n\033[31m{} são menores de idade!\033[m'.format(smai, smei))
