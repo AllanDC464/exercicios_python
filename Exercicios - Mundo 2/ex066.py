@@ -1,5 +1,5 @@
-cont = num = s = 0
-while num != 999:
+cont = s = 0
+while True:
     num = int(input('Digite um número (999 para parar): '))
     if num == 999:
         break
