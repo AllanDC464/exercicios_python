@@ -11,22 +11,16 @@ while True:
     if preco > 1000:
         maior += 1
     cont += 1
-    if cont == 1:
+    if cont == 1 or preco < menor:
         menor = preco
         produto = nomeproduto
-    else:
-        if preco < menor:
-            menor = preco
-            produto = nomeproduto
-    resp = str(input('Deseja continuar? [S/N] '))
-    if resp in 'Nn':
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
+    if resp == 'N':
         break
-    while resp not in 'Ss':
-        resp = str(input('Deseja continuar? [S/N] '))
     print('▬' * 28)
-print(' ')
 print('... ENCERRANDO ...'.center(28))
-print(' ')
 sleep(3)
 print('▬' * 5 ,'FIM DO PROGRAMA!', '▬' * 5)
 print(f'Total gasto: R${soma:.2f}')
