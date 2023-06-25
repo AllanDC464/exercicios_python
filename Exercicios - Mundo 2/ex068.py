@@ -3,10 +3,12 @@ print('=-=' * 10)
 print('VAMOS JOGAR PAR OU ÍMPAR'.center(30))
 cont = 0
 while True:
-    pc = randint(1, 10)
+    pc = randint(0, 10)
     print('=-=' * 10)
     num = int(input('Diga um valor: '))
-    parImpar = str(input('Par ou ímpar? [P/I] '))
+    parImpar = ' '
+    while parImpar not in 'PI':
+        parImpar = str(input('Par ou ímpar? [P/I] ')).strip().upper()[0]
     soma = num + pc
     print('▬' * 30)
     if soma % 2 == 0 and parImpar in 'Pp':
