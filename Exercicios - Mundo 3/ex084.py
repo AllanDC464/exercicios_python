@@ -30,4 +30,3 @@ for p in pessoas:
     if menorPeso == p[1]:
         print(f'[{p[0]}]', end=' ')
 print('')
-
